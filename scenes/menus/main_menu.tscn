@@ -21,12 +21,14 @@ texture = ExtResource("2_5epk7")
 expand_mode = 2
 
 [node name="Buildings" type="TextureRect" parent="Background"]
+layout_mode = 0
 offset_top = 123.0
 offset_right = 467.0
 offset_bottom = 561.0
 texture = ExtResource("3_qs7cu")
 
 [node name="Buildings" type="TextureRect" parent="Background/Buildings"]
+layout_mode = 0
 offset_left = 464.0
 offset_right = 931.0
 offset_bottom = 438.0
@@ -34,6 +36,7 @@ texture = ExtResource("3_qs7cu")
 flip_h = true
 
 [node name="Buildings" type="TextureRect" parent="Background/Buildings/Buildings"]
+layout_mode = 0
 offset_left = 405.0
 offset_right = 866.0
 offset_bottom = 438.0
@@ -50,7 +53,6 @@ texture = ExtResource("4_e3gst")
 [node name="MenuButtons" type="Node" parent="."]
 
 [node name="Settings" type="Button" parent="MenuButtons"]
-visible = false
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
@@ -83,7 +85,6 @@ texture = ExtResource("4_f6y5d")
 expand_mode = 1
 
 [node name="Level1" type="Button" parent="MenuButtons"]
-visible = false
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
@@ -116,7 +117,6 @@ texture = ExtResource("5_6f2cn")
 expand_mode = 1
 
 [node name="Level2" type="Button" parent="MenuButtons"]
-visible = false
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
@@ -149,12 +149,10 @@ texture = ExtResource("6_iepsq")
 expand_mode = 1
 
 [node name="Button" type="Button" parent="MenuButtons"]
-visible = false
 offset_right = 8.0
 offset_bottom = 8.0
 
 [node name="TitleText" type="TextureRect" parent="."]
-visible = false
 texture_filter = 1
 anchors_preset = 8
 anchor_left = 0.5

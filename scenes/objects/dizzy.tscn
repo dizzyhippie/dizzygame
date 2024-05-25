@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dablwr56trpnq"]
+
+[ext_resource type="Texture2D" uid="uid://cd2jdem3iukhs" path="res://assets/sprites/dizzy-still.png" id="1_8cwk0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ukmmg"]
+size = Vector2(18, 46)
+
+[node name="Dizzy" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(113, 170)
+scale = Vector2(0.097973, 0.097973)
+texture = ExtResource("1_8cwk0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(113, 170)
+shape = SubResource("RectangleShape2D_ukmmg")
