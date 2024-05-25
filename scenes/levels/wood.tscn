@@ -391,7 +391,7 @@ texture_filter = 1
 position = Vector2(355, 68)
 sprite_frames = SubResource("SpriteFrames_m5j53")
 autoplay = "default"
-frame_progress = 0.599513
+frame_progress = 0.985366
 
 [node name="Dizzy" parent="." instance=ExtResource("5_gwwx7")]
 position = Vector2(-4, -1)
