@@ -1,0 +1,173 @@
+[gd_scene load_steps=9 format=3 uid="uid://bl6x7xib3eilq"]
+
+[ext_resource type="Script" path="res://scenes/scripts/main_menu.gd" id="1_cufbg"]
+[ext_resource type="Texture2D" uid="uid://bx0enj0y3o867" path="res://assets/backgrounds/back.png" id="2_5epk7"]
+[ext_resource type="Texture2D" uid="uid://buivwgmkqdi34" path="res://assets/text/DizzyMo.png" id="3_ha06b"]
+[ext_resource type="Texture2D" uid="uid://dmfykb8rutrfr" path="res://assets/backgrounds/buildings.png" id="3_qs7cu"]
+[ext_resource type="Texture2D" uid="uid://bnjl4wap6w1ju" path="res://assets/backgrounds/highway.png" id="4_e3gst"]
+[ext_resource type="Texture2D" uid="uid://gj4a173preti" path="res://assets/text/Settings.png" id="4_f6y5d"]
+[ext_resource type="Texture2D" uid="uid://b43doysum4hhu" path="res://assets/text/Level1.png" id="5_6f2cn"]
+[ext_resource type="Texture2D" uid="uid://cv03gmdc1w6no" path="res://assets/text/Level2.png" id="6_iepsq"]
+
+[node name="MainMenu" type="Node"]
+script = ExtResource("1_cufbg")
+
+[node name="Background" type="TextureRect" parent="."]
+texture_filter = 1
+clip_contents = true
+offset_right = 1150.0
+offset_bottom = 645.0
+texture = ExtResource("2_5epk7")
+expand_mode = 2
+
+[node name="Buildings" type="TextureRect" parent="Background"]
+offset_top = 123.0
+offset_right = 467.0
+offset_bottom = 561.0
+texture = ExtResource("3_qs7cu")
+
+[node name="Buildings" type="TextureRect" parent="Background/Buildings"]
+offset_left = 464.0
+offset_right = 931.0
+offset_bottom = 438.0
+texture = ExtResource("3_qs7cu")
+flip_h = true
+
+[node name="Buildings" type="TextureRect" parent="Background/Buildings/Buildings"]
+offset_left = 405.0
+offset_right = 866.0
+offset_bottom = 438.0
+texture = ExtResource("3_qs7cu")
+flip_h = true
+
+[node name="Road" type="TextureRect" parent="."]
+offset_left = 2.0
+offset_top = 338.0
+offset_right = 1148.0
+offset_bottom = 645.0
+texture = ExtResource("4_e3gst")
+
+[node name="MenuButtons" type="Node" parent="."]
+
+[node name="Settings" type="Button" parent="MenuButtons"]
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -65.0
+offset_top = -332.0
+offset_right = 65.0
+offset_bottom = -264.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.563465, 0.357147, 0.827655, 1)
+theme_override_font_sizes/font_size = 24
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="MenuButtons/Settings"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -104.5
+offset_top = 210.5
+offset_right = 104.5
+offset_bottom = 253.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_f6y5d")
+expand_mode = 1
+
+[node name="Level1" type="Button" parent="MenuButtons"]
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -65.0
+offset_top = -332.0
+offset_right = 65.0
+offset_bottom = -264.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.563465, 0.357147, 0.827655, 1)
+theme_override_font_sizes/font_size = 24
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="MenuButtons/Level1"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -104.5
+offset_top = -21.5
+offset_right = 104.5
+offset_bottom = 21.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_6f2cn")
+expand_mode = 1
+
+[node name="Level2" type="Button" parent="MenuButtons"]
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -65.0
+offset_top = -243.0
+offset_right = 65.0
+offset_bottom = -175.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.564706, 0.356863, 0.827451, 1)
+theme_override_font_sizes/font_size = 24
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="MenuButtons/Level2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -116.0
+offset_top = -56.0
+offset_right = 116.0
+offset_bottom = -13.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_iepsq")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="MenuButtons"]
+visible = false
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="TitleText" type="TextureRect" parent="."]
+visible = false
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -295.0
+offset_top = -151.0
+offset_right = 302.0
+offset_bottom = -43.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_ha06b")
+
+[connection signal="pressed" from="MenuButtons/Level1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="MenuButtons/Level2" to="." method="_on_level_2_pressed"]
